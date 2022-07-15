@@ -1,0 +1,7 @@
+com\cjl\controller\CardFeignController.class
+com\cjl\service\CompanyFeignService.class
+com\cjl\controller\IdolFeignController.class
+com\cjl\controller\CompanyFeignController.class
+com\cjl\service\IdolFeignService.class
+com\cjl\PicConsumer.class
+com\cjl\service\CardFeignService.class

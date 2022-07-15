@@ -1,0 +1,26 @@
+server:
+  port: 9610
+  servlet:
+    context-path: /
+logger:
+  level:
+    com.cjl: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://ipaddress:3306/IMAS_PIC?serverTimezone=UTC&&useOldAliasMetadataBehavior=true&&characterEncoding=utf8&useSSL=false
+    username: username
+    password: password
+  application:
+    name: IMAS-PIC-Productor
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        timeout: 5000
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  type-aliases-package: com.cjl.pojo
+
